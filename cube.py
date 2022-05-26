@@ -166,7 +166,8 @@ if __name__ == "__main__":
         for x in range(0, 10000):
             scramble("F' R2 D2 U' B2")
         print("--- %s seconds ---" % (time.time() - start_time))
-    elif(args == "--test_turns"):
+    elif(args == "--test-turns"):
+        cube = create_cube()
         while(True):
             print_cube(cube)
             x = input()
